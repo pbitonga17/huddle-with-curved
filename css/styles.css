@@ -177,12 +177,6 @@ main {
 /** MAIN -END- **/
 
 /** FOOTER **/
-footer {
-    display: flex;
-    flex-direction: column;
-    margin: 50px 30px;
-    gap: 3rem;
-}
 .logo img {
     width: 11rem;
 }
@@ -222,7 +216,22 @@ label {
 /** NEWSLETTER -END- **/
 /** INFORMATION **/
 footer {
-    color: black;
+    display: flex;
+    margin-top: 10rem;
+    flex-direction: column;
+    background-color: hsl(192, 100%, 9%);
+    color: white;
+    gap: 3rem;
+    padding: 30px;
+    position: relative;
+}
+footer::after {
+    content: url(../images/bg-footer-top-mobile.svg);
+    position: absolute;
+    width: 100%;
+    top: -7%;
+    left: 0%;
+    right: 0;
 }
 .information {
     display: flex;
@@ -235,7 +244,7 @@ footer {
     gap: 1.5rem;
 }
 .logo img {
-
+    color: white;
 }
 .information p {
     font-size: 1rem;
@@ -247,7 +256,7 @@ footer {
 }
 .fa-brands {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 /** INFORMATION -END- **/
 /** FOOTER -END- **/
