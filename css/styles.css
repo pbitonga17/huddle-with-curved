@@ -42,7 +42,6 @@ main {
     justify-content: center;
     align-items: center;
     max-width: 70rem;
-    padding: 0 35px;
 }
 main img {
     width: 5rem;
@@ -53,6 +52,7 @@ main img {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
+    padding: 0 35px;
 }
 .container-one h1 {
     font-family: 'Poppins', sans-serif;
@@ -80,6 +80,7 @@ main img {
     flex-direction: column;
     gap: 5rem;
     align-items: center;
+    padding: 0 35px;
 }
 .stats {
     display: flex;
@@ -104,18 +105,21 @@ main img {
     align-items: center;
     gap: 2rem;
     position: relative;
+    padding: 50px 35px;
 }
 .container-three::before {
     content: url(../images/bg-section-top-mobile-1.svg);
     position: absolute;
-    top: -90px;
+    top: 0;
+    transform: translateY(-90%);
     width: 100%;
     height: auto;
 }
 .container-three::after {
     content: url(../images/bg-section-bottom-mobile-1.svg);
     position: absolute;
-    bottom: -85px;
+    bottom: 0;
+    transform: translateY(90%);
     width: 100%;
     height: auto;
 }
@@ -139,24 +143,30 @@ main img {
 .container-four {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0 35px;
 }
 .container-five {
     display: flex;
     flex-direction: column-reverse;
     position: relative;
     background-color: hsl(207, 100%, 98%);
+    padding: 50px 35px;
 }
 .container-five::before {
     content: url(../images/bg-section-top-mobile-2.svg);
     position: absolute;
-    top: -85px;
+    top: 0;
+    left: 0;
+    transform: translateY(-90%);
     width: 100%;
     height: auto;
 }
 .container-five::after {
     content: url(../images/bg-section-bottom-mobile-2.svg);
     position: absolute;
-    bottom: -89px;
+    left: 0;
+    bottom: 0;
+    transform: translateY(90%);
     width: 100%;
     height: auto;
 }
@@ -165,6 +175,7 @@ main img {
     flex-direction: column;
     gap: 1.3rem;
     align-items: center;
+    padding: 0 35px;
 }
 .end h2 {
     font-family: 'Poppins', sans-serif;
@@ -187,21 +198,25 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     gap: 5rem;
     background-color: hsl(192, 100%, 9%);
     color: white;
     max-width: 70rem;
+    padding-top: 50px;
     padding-right: 35px;
     padding-left: 35px;
     position: relative;
 }
 footer::before {
-    content: url(../images/bg-footer-top-mobile.svg);
+    content: '';
     width: 100%;
-    height: auto;
     position: absolute;
-    top: -55px;
+    top: 0;
+    left: 0;
+    transform: translateY(-40%);
+    background: url(../images/bg-footer-top-mobile.svg) no-repeat;
+    background-size: 100%;
+    height: 100px;
 }
 .newsletter {
     display: flex;
@@ -229,7 +244,7 @@ label {
 }
 #subscribe-btn {
     width: 100%;
-    padding: 10px 0;
+    padding: 20px 0;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
     color: white;
