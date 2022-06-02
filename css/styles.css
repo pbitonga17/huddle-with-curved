@@ -192,7 +192,8 @@ footer {
     background-color: hsl(192, 100%, 9%);
     color: white;
     max-width: 70rem;
-    padding: 0 35px;
+    padding-right: 35px;
+    padding-left: 35px;
     position: relative;
 }
 footer::before {
