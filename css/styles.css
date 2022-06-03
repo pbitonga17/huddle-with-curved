@@ -597,6 +597,9 @@ label {
     border-radius: 5px;
     grid-column: 2 / 3;
 }
+#subscribe-btn:hover {
+    background-color: hsl(321, 100%, 78%);
+}
 .logo {
     display: flex;
     flex-direction: column;
