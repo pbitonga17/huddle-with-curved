@@ -108,8 +108,8 @@ main img {
     main {
         display: grid;
         place-items: center;
+        gap: 12rem;
         margin: 0 auto;
-        gap: 10rem;
     }
     .container-one {
         display: flex;
@@ -601,10 +601,11 @@ label {
 }
 @media screen and (min-width: 1450px) {
     footer {
+        min-width: 100%;
         margin-top: 15rem ;
         margin-right: auto;
         margin-left: auto;
-        padding: 50px 12vw;
+        padding: 50px 25vw;
         display: grid;
         flex-direction: column;
         justify-content: space-around;
