@@ -58,7 +58,7 @@ nav a {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 50px 30vw;
+        margin: 50px 25vw;
         }
     }
 /***** H E A D E R  -END- *****/
@@ -132,8 +132,25 @@ main img {
     }
 }
 @media screen and (min-width: 1440px) {
+    main {
+        display: grid;
+        min-width: 100%;
+    }
     .container-one p {
         margin: 0 23rem;
+    }
+}
+@media screen and (min-width: 1800px) {
+    .container-one {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        padding: 0 27vw;
+        margin: 0 auto;
+    }
+    .container-one img {
+        margin: 50px auto;
+        width: 100%;
     }
 }
 .container-two {
@@ -210,9 +227,6 @@ main img {
     line-height: 1.5rem;
 }
 @media screen and (min-width: 1024px) {
-    .images img {
-        width: 20rem;
-    }
     .text {
         text-align: left;
         line-height: 0.5rem;
@@ -250,9 +264,6 @@ main img {
         padding: 0 50px;
         gap: 3rem;
     }
-    .images img {
-        width: 20rem;
-    }
     .text {
         text-align: left;
         line-height: 0.5rem;
@@ -284,7 +295,7 @@ main img {
 }
 @media screen and (min-width: 1800px) {
     .images img {
-        width: 20rem;
+        width: 100%;
     }
     .text {
         text-align: left;
@@ -293,7 +304,7 @@ main img {
     .container-three {
         display: flex;
         flex-direction: row;
-        padding: 0 12vw;
+        padding: 0 25vw;
         gap: 5rem;
     }
     .container-three::before {
@@ -344,7 +355,7 @@ main img {
         display: flex;
         flex-direction: row-reverse;
         align-items: center;
-        padding: 0 12vw;
+        padding: 0 25vw;
         gap: 5rem;
     }
 }
@@ -432,7 +443,7 @@ main img {
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 0 12vw;
+        padding: 0 25vw;
         gap: 5rem;
     }
     .container-five::before {
